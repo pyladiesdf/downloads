@@ -1,0 +1,657 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Plantillas de Django · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../css/" />
+    
+    
+    <link rel="prev" href="../dynamic_data_in_templates/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    ¿Cómo funciona Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Comenzar un proyecto en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    ¡Desplegar!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Vistas de Django - ¡Es hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM de Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Hazlo bonito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Extender plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularios en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    ¿Qué sigue?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and buy a Django Girls t-shirt! ✨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Plantillas de Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="plantillas-de-django">Plantillas de Django</h1>
+<p>&#xA1;Es hora de mostrar algunos datos! Django nos provee las &#xFA;tiles <strong>template tags</strong> para ello.</p>
+<h2 id="&#xBF;qu&#xE9;-son-las-template-tags">&#xBF;Qu&#xE9; son las template tags?</h2>
+<p>Ver&#xE1;s, en HTML no puedes realmente poner c&#xF3;digo Python, porque los navegadores no lo entienden. Ellos s&#xF3;lo saben HTML. Sabemos que HTML es algo est&#xE1;tico, mientras que Python es mucho m&#xE1;s din&#xE1;mico.</p>
+<p><strong>Django template tags</strong> nos permiten transferir cosas de Python como cosas en HTML, as&#xED; que tu puedes construir sitios web din&#xE1;micos m&#xE1;s r&#xE1;pido y f&#xE1;cil.</p>
+<h2 id="mostrar-la-plantilla-post-list">Mostrar la plantilla post list</h2>
+<p>En el cap&#xED;tulo anterior dimos a nuestra plantilla una lista de posts en la variable <code>posts</code>. Ahora lo mostraremos en HTML.</p>
+<p>Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, as&#xED;:</p>
+<pre><code class="lang-html">    {{ posts }}
+</code></pre>
+<p>Prueba esto en tu plantilla <code>blog/templates/blog/post_list.html</code> (reemplaza el segundo y el tercer par de etiquetas <code>&lt;div&gt;&lt;/div&gt;</code> con la l&#xED;nea <code>{{ posts }}</code>), guarda el archivo y actualiza la p&#xE1;gina para ver los resultados:</p>
+<p><img src="images/step1.png" alt="Figura 13.1"></p>
+<p>Como puedes ver, todo lo que obtenemos es esto:</p>
+<pre><code>&lt;QuerySet [&lt;Post: Mi segundo post&gt;, &lt;Post: Mi primer post&gt;]&gt;
+</code></pre><p>Esto significa que Django lo entiende como una lista de objetos. &#xBF;Recuerdas de <strong>Introducci&#xF3;n a Python</strong> c&#xF3;mo podemos mostrar listas? S&#xED;, &#xA1;con los ciclos for! En una plantilla de Django, lo haces de esta manera:</p>
+<pre><code class="lang-html">    {% for post in posts %}
+        {{ post }}
+    {% endfor %}
+</code></pre>
+<p>Prueba esto en tu plantilla.</p>
+<p><img src="images/step2.png" alt="Figura 13.2"></p>
+<p>&#xA1;Funciona! Pero queremos que se muestren como los posts est&#xE1;ticos que creamos anteriormente en el cap&#xED;tulo de <strong>Introducci&#xF3;n a HTML</strong>. Puedes mezclar HTML y template tags. Nuestro <code>body</code> se ver&#xE1; as&#xED;:</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    {% for post in posts %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    {% endfor %}
+</code></pre>
+<p>Todo lo que pones entre <code>{% for %}</code> y <code>{% endfor %}</code> se repetir&#xE1; para cada objeto en la lista. Actualiza tu p&#xE1;gina:</p>
+<p><img src="images/step3.png" alt="Figura 13.3"></p>
+<p>&#xBF;Has notado que utilizamos una notaci&#xF3;n diferente esta vez <code>{{ post.title }}</code> o <code>{{ post.text }}</code>? Estamos accediendo a datos en cada uno de los campos definidos en nuestro modelo <code>Post</code>. Tambi&#xE9;n el <code>|linebreaksbr</code> est&#xE1; dirigiendo el texto de los posts a trav&#xE9;s de un filtro para convertir saltos de l&#xED;nea en p&#xE1;rrafos.</p>
+<h2 id="una-cosa-m&#xE1;s">Una cosa m&#xE1;s</h2>
+<p>Ser&#xED;a bueno ver si tu sitio web seguir&#xE1; funcionando en la Internet p&#xFA;blica, &#xBF;verdad? Intentemos despleg&#xE1;ndola en PythonAnywhere nuevamente. Aqu&#xED; te dejamos un ayuda memoria...</p>
+<ul>
+<li>Primero, sube tu c&#xF3;digo a GitHub</li>
+</ul>
+<pre><code>$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m &quot;Modified templates to display posts from database.&quot;
+[...]
+$ git push
+</code></pre><ul>
+<li>Luego, identif&#xED;cate en <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere</a> y ve a tu <strong>consola Bash</strong> (o empieza una nueva), y ejecuta:</li>
+</ul>
+<pre><code>$ cd my-first-blog
+$ git pull
+[...]
+</code></pre><ul>
+<li>Finalmente, ve a la <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">pesta&#xF1;a Web</a> y presiona <strong>Reload</strong> en tu aplicaci&#xF3;n web. &#xA1;Tu actualizaci&#xF3;n deber&#xED;a poder verse!</li>
+</ul>
+<p>&#xA1;Felicidades! Ahora sigue adelante, trata de agregar un nuevo post usando el panel de administrador de Django (&#xA1;recuerda a&#xF1;adir published_date!) y luego actualiza tu p&#xE1;gina para ver si aparece tu nuevo post.</p>
+<p>&#xBF;Funciona como un encanto? &#xA1;Estamos orgullosos! Al&#xE9;jate de tu computadora por un rato, te has ganado un descanso. :)</p>
+<p><img src="images/donut.png" alt="Figura 13.4"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-prev " aria-label="Previous page: Datos dinámicos en plantillas">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../css/" class="navigation navigation-next " aria-label="Next page: CSS - Hazlo bonito">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Plantillas de Django","level":"1.18","depth":1,"next":{"title":"CSS - Hazlo bonito","level":"1.19","depth":1,"path":"css/README.md","ref":"css/README.md","articles":[]},"previous":{"title":"Datos dinámicos en plantillas","level":"1.17","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"💖 Support our work and buy a Django Girls t-shirt! ✨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.0.6"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_templates/README.md","mtime":"2018-06-09T17:12:42.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-10T15:23:12.236Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

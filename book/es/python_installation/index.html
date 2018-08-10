@@ -1,0 +1,634 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Instalación de Python · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../code_editor/" />
+    
+    
+    <link rel="prev" href="../intro_to_command_line/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    ¿Cómo funciona Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Comenzar un proyecto en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    ¡Desplegar!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Vistas de Django - ¡Es hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM de Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Hazlo bonito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Extender plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularios en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    ¿Qué sigue?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and buy a Django Girls t-shirt! ✨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Instalación de Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vamos-a-empezar-con-python">Vamos a empezar con Python</h1>
+<p>&#xA1;Por fin estamos aqu&#xED;!</p>
+<p>Pero primero, d&#xE9;jenos decirte qu&#xE9; es Python. Python es un lenguaje de programaci&#xF3;n muy popular que puede utilizarse para la creaci&#xF3;n de sitios web, juegos, software acad&#xE9;mico, gr&#xE1;ficos y mucho, mucho m&#xE1;s.</p>
+<p>Python se origin&#xF3; en la d&#xE9;cada de 1980 y su objetivo principal es ser legible por los seres humanos (&#xA1;no s&#xF3;lo para las m&#xE1;quinas!), por eso parece mucho m&#xE1;s simple que otros lenguajes de programaci&#xF3;n. Esto hace que sea m&#xE1;s f&#xE1;cil de aprender, pero no te preocupes, &#xA1;Python es tambi&#xE9;n muy poderoso!</p>
+<h1 id="instalaci&#xF3;n-de-python">Instalaci&#xF3;n de Python</h1>
+<blockquote>
+<p>Este subcap&#xED;tulo se basa en un tutorial de Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots/" target="_blank">https://github.com/ggcarrots/django-carrots/</a>)</p>
+</blockquote>
+<p>Django est&#xE1; escrito en Python. Necesitamos Python para cualquier cosa en Django. &#xA1;Vamos a empezar con la instalaci&#xF3;n! Queremos que instales Python 3.4, as&#xED; que si tienes alguna versi&#xF3;n anterior, deber&#xE1;s actualizarla.</p>
+<h3 id="windows">Windows</h3>
+<p>Puedes descargar Python para Windows desde el sitio web <a href="https://www.python.org/downloads/release/python-343/" target="_blank">https://www.python.org/downloads/release/python-343/</a>. Despu&#xE9;s de descargar el archivo <strong>*.msi</strong>, debes ejecutarlo (haz doble click en el archivo) y sigue las instrucciones. Es importante recordar la ruta (el directorio) donde se ha instalado Python. &#xA1;Ser&#xE1; necesario m&#xE1;s adelante!</p>
+<p>Algo para tener en cuenta: en la segunda pantalla del asistente de instalaci&#xF3;n, llamada &quot;Customize&quot;, aseg&#xFA;rate de ir hacia abajo y elegir la opci&#xF3;n &quot;Add python.exe to the Path&quot;, como en</p>
+<p><img src="images/add_python_to_windows_path.png" alt="No te olvides de agregar Python al Path"></p>
+<h3 id="linux">Linux</h3>
+<p>Es muy posible que ya tengas Python instalado. Para verificar que ya lo tienes instalado (y qu&#xE9; versi&#xF3;n es), abre una consola y tipea el siguiente comando:</p>
+<pre><code>$ python3 --version
+Python 3.4.2
+</code></pre><p>Si no tienes Python instalado o si quieres una versi&#xF3;n diferente, puedes instalarlo como sigue:</p>
+<h4 id="ubuntu">Ubuntu</h4>
+<p>Tipea este comando en tu consola:</p>
+<pre><code>sudo apt install python3.4
+</code></pre><h4 id="fedora">Fedora</h4>
+<p>Usa este comando en tu consola:</p>
+<pre><code>sudo dnf install python3.4
+</code></pre><h4 id="opensuse">openSUSE</h4>
+<p>Usa este comando en tu consola:</p>
+<pre><code>sudo zypper install python3
+</code></pre><h3 id="os-x">OS X</h3>
+<p>Debes ir al sitio web <a href="https://www.python.org/downloads/release/python-342/" target="_blank">https://www.python.org/downloads/release/python-342/</a> y descargar el instalador de Python:</p>
+<ul>
+<li>descarga el archivo <em>DMG</em> <em>Mac OS X 64-bit/32-bit installer</em>,</li>
+<li>haz doble click para abrirlo,</li>
+<li>doble click en <em>Python.mpkg</em> para ejecutar al instalador.</li>
+</ul>
+<p>Verifica que la instalaci&#xF3;n fue exitosa abriendo la <em>Terminal</em> y ejecutando el comando <code>python3</code>:</p>
+<pre><code>$ python3 --version
+Python 3.4.2
+</code></pre><hr>
+<p>Si tienes alguna duda o si algo sali&#xF3; mal y no sabes c&#xF3;mo resolverlo - &#xA1;pide ayuda a tu tutor! Algunas veces las cosas no salen tan f&#xE1;cilmente y es mejor pedir ayuda a alguien con m&#xE1;s experiencia.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../intro_to_command_line/" class="navigation navigation-prev " aria-label="Previous page: Introducción a la línea de comandos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../code_editor/" class="navigation navigation-next " aria-label="Next page: Editor de código">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Instalación de Python","level":"1.4","depth":1,"next":{"title":"Editor de código","level":"1.5","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"previous":{"title":"Introducción a la línea de comandos","level":"1.3","depth":1,"path":"intro_to_command_line/README.md","ref":"intro_to_command_line/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"💖 Support our work and buy a Django Girls t-shirt! ✨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.0.6"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_installation/README.md","mtime":"2018-06-09T17:12:42.783Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-10T15:23:12.236Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

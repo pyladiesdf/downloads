@@ -1,0 +1,809 @@
+
+<!DOCTYPE HTML>
+<html lang="it" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduzione al command line · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Scrivi per cercare" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduzione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Come funziona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduzione al command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Installazione di Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Code Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduzione a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Che cos'è Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installazione di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Il tuo primo progetto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    I modelli di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    L'admin di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Le views di Django - è arrivata l'ora di creare!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduzione all'HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM di Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    I dati dinamici in templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    I templates di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - dagli un bell'aspetto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendere il template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Estendi la tua applicazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Form Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Quali sono le prospettive?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Pubblicato con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and buy a Django Girls t-shirt! ✨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Introduzione al command line</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduzione-alla-linea-di-comando">Introduzione alla linea di comando</h1>
+<p>Eccitante, vero? Scriverai la tua prima riga di codice in pochi minuti :)</p>
+<p><strong>Ti presentiamo il tuo primo nuovo amico: la linea di comando!</strong></p>
+<p>I prossimi passaggi ti mostreranno come utilizzare quella &apos;finestra nera&apos; che tutti gli hacker utilizzano. Ti potr&#xE0; sembrare un po&apos; allarmante all&apos;inizio, ma &#xE8; solamente un prompt in attesa dei tuoi comandi.</p>
+<blockquote>
+<p><strong>Nota</strong> Nota bene: in tutto questo tutorial usiamo sia il termine &apos;directory&apos; che &apos;cartella&apos; ma sono la stessa cosa.</p>
+</blockquote>
+<h2 id="cos&#xE8;-la-command-line">Cos&apos;&#xE8; la command line?</h2>
+<p>La finestra solitamente chiamata <strong>comand-line</strong> o <strong>interfaccia della command-line</strong>, &#xE8; un&apos;applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. Molto simile a Windows Explorer o al Finder su Mac, ma senza l&apos;interfaccia grafica. Altri nomi per la command line sono: <em>cmd</em>, <em>CLI</em>, <em>prompt</em>, <em>console</em> o <em>terminal</em>.</p>
+<h2 id="aprire-linterfaccia-di-command-line">Aprire l&apos;interfaccia di command-line</h2>
+<p>Per cominciare a sperimentare dobbiamo aprire l&apos;interfaccia della nostra command-line.</p>
+<h3 id="windows">Windows</h3>
+<p>Vai a men&#xF9; Start &#x2192; tutti i programmi &#x2192; accessori &#x2192; prompt dei comandi.</p>
+<h3 id="mac-os-x">Mac OS X</h3>
+<p>Applicazioni &#x2192; utilit&#xE0; &#x2192; terminal.</p>
+<h3 id="linux">Linux</h3>
+<p>Probabilmente &#xE8; sotto Applicazioni &#x2192; Accessori &#x2192; Terminal, ma quello potrebbe dipendere dal tuo sistema. Se non &#xE8; l&#xEC; cercalo su Google :)</p>
+<h2 id="prompt">Prompt</h2>
+<p>Ora dovresti essere in grado di vedere una finestra bianca o nera che &#xE8; in attesa di ricevere un comando.</p>
+<p>Se sei su Mac o Linux, probabilmente vedi <code>$</code>, proprio come questo:</p>
+<pre><code>$
+</code></pre><p>Su Windows, &#xE8; un segno <code>&gt;</code>, come questo:</p>
+<pre><code>&gt;
+</code></pre><p>Ogni comando sar&#xE0; preceduto da questo simbolo e da uno spazio, ma tu non hai bisogno di digitarlo. Il computer lo far&#xE0; per te :)</p>
+<blockquote>
+<p>Solo una piccola nota: nel tuo caso ci dovrebbe essere qualcosa come <code>C:\Users\ola&gt;</code> oppure <code>Olas-MacBook-Air:~ ola$</code> prima del segno di prompt. &#xC8; corretto al 100%. In questo tutorial lo semplificheremo al massimo.</p>
+</blockquote>
+<h2 id="il-tuo-primo-comando-yay">Il tuo primo comando (YAY!)</h2>
+<p>Cominciamo con qualcosa di veramente semplice. Digita questo comando:</p>
+<pre><code>$ whoami
+</code></pre><p>oppure</p>
+<pre><code>&gt; whoami
+</code></pre><p>Premi <code>invio</code>. Questo &#xE8; il nostro risultato:</p>
+<pre><code>$ whoami
+olasitarska
+</code></pre><p>Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh?:)</p>
+<blockquote>
+<p>Prova a digitare ogni comando, non copiare ed incollare. Ti ricorderai di pi&#xF9; in questo modo!</p>
+</blockquote>
+<h2 id="nozioni-di-base">Nozioni di base</h2>
+<p>Ogni sistema operativo ha un insieme di comandi leggermente diverso per la command line, per cui assicurati di seguire le istruzioni per il tuo sistema operativo. Proviamo questo, ti va?</p>
+<h3 id="cartella-corrente">Cartella corrente</h3>
+<p>Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi <code>invio</code>:</p>
+<pre><code>$ pwd
+/Users/olasitarska
+</code></pre><p>Se sei su Windows:</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska
+</code></pre><p>Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.</p>
+<blockquote>
+<p>Nota: &apos;pwd&apos; sta per &apos;stampa directory di lavoro&apos;.</p>
+</blockquote>
+<hr>
+<h3 id="elenco-di-file-e-cartelle">Elenco di file e cartelle</h3>
+<p>Cosa c&apos;&#xE8; dentro? Sarebbe bello scoprirlo. Vediamo come:</p>
+<pre><code>$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+</code></pre><p>Windows:</p>
+<pre><code>&gt; dir
+ Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM &lt;DIR&gt;      Applications
+05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
+05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
+05/08/2014 07:28 PM &lt;DIR&gt;      Music
+...
+</code></pre><hr>
+<h3 id="cambiare-cartella-corrente">Cambiare cartella corrente</h3>
+<p>Ora, andiamo nella nostra directory Desktop:</p>
+<pre><code>$ cd Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd Desktop
+</code></pre><p>Controlla ora se ti sei veramente spostato/a:</p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre><p>Ecco fatto!</p>
+<blockquote>
+<p>Suggerimento PRO: se digiti <code>cd D</code> e poi premi <code>tab</code> sulla tastiera, la command-line completer&#xE0; automaticamente il resto del nome per cui puoi navigare pi&#xF9; velocemente. Se c&apos;&#xE8; pi&#xF9; di una cartella che comincia con &quot;D&quot;, premi <code>tab</code> due volte per ottenere la lista con tutte le opzioni.</p>
+</blockquote>
+<hr>
+<h3 id="creare-una-directory">Creare una directory</h3>
+<p>Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:</p>
+<pre><code>$ mkdir practice
+</code></pre><p>Windows:</p>
+<pre><code>&gt; mkdir practice
+</code></pre><p>Questo breve comando creer&#xE0; una cartella con il nome <code>practice</code> sul tuo desktop. Puoi controllare se &#xE8; l&#xEC; semplicemente guardando sul tuo desktop oppure eseguendo un commando <code>ls</code> oppure <code>dir</code>! Provalo :)</p>
+<blockquote>
+<p>Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere <code>freccia in su</code> e <code>freccia in gi&#xF9;</code> sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.</p>
+</blockquote>
+<hr>
+<h3 id="esercizio">Esercizio!</h3>
+<p>Piccola sfida per te: nella tua directory appena creata <code>practice</code> crea una directory chiamata <code>test</code>. usa i comandi <code>cd</code> e <code>mkdir</code>.</p>
+<h4 id="soluzione">Soluzione:</h4>
+<pre><code>$ cd practice
+$ mkdir test
+$ ls
+test
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd practice
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test
+</code></pre><p>Congratulazioni! :)</p>
+<hr>
+<h3 id="facciamo-ordine">Facciamo ordine</h3>
+<p>Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo fatto fino a questo punto.</p>
+<p>Per prima cosa dobbiamo tornare al Desktop:</p>
+<pre><code>$ cd ..
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd ..
+</code></pre><p>Usando <code>..</code> con il comando <code>cd</code> cambierai la tua directory attuale alla directory padre (si tratta della cartella che contiene la tua directory attuale).</p>
+<p>Controlla dove ti trovi ora:</p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre><p>Windows:</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre><p>Adesso &#xE8; l&apos;ora di cancellare la directory <code>practice</code>:</p>
+<blockquote>
+<p><strong>Attenzione</strong>: cancellare un file usando <code>del</code>, <code>rmdir</code> o <code>rm</code> &#xE8; irreversibile, <em>i file cancellati andranno perduti per sempre</em>! Per cui sii molto prudente nell&apos;utilizzare questi comandi.</p>
+</blockquote>
+<pre><code>$ rm -r practice
+</code></pre><p>Windows:</p>
+<pre><code>&gt; rmdir /S practice
+practice, Are you sure &lt;Y/N&gt;? Y
+</code></pre><p>Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:</p>
+<pre><code>$ ls
+</code></pre><p>Windows:</p>
+<pre><code>&gt; dir
+</code></pre><h3 id="uscire-dalla-command-line">Uscire dalla command line</h3>
+<p>Questo &#xE8; tutto per ora! puoi tranquillamente chiudere la tua command line. Facciamolo alla maniera degli hacker, va bene?:)</p>
+<pre><code>$ exit
+</code></pre><p>Windows:</p>
+<pre><code>&gt; exit
+</code></pre><p>Figo, eh?:)</p>
+<h2 id="indice">Indice</h2>
+<p>Questo &#xE8; un riepilogo di alcuni comandi utili:</p>
+<table>
+<thead>
+<tr>
+<th>Comandi(Windows)</th>
+<th>Comandi (Mac OS / Linux)</th>
+<th>Descrizione</th>
+<th>Esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>chiudi la finestra</td>
+<td><strong>exit</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>cambiare directory</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>elenco directory/file</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>copia un file</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>spostare un file</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>creare una nuova directory</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>del</td>
+<td>rm</td>
+<td>eliminare un file/directory</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma non ne userai altri oltre a quelli spiegati oggi.</p>
+<p>Se sei curioso/a, <a href="http://ss64.com" target="_blank">ss64.com</a> contiene una guida completa ai comandi per tutti i sistemi operativi.</p>
+<h2 id="fatto">Fatto?</h2>
+<p>Tuffiamoci in Python!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Come funziona Internet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Installazione di Python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduzione al command line","level":"1.4","depth":1,"next":{"title":"Installazione di Python","level":"1.5","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Come funziona Internet","level":"1.3","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"💖 Support our work and buy a Django Girls t-shirt! ✨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.0.6"},"language":"it","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2018-06-09T17:12:42.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-10T15:23:12.236Z"},"basePath":"..","book":{"language":"it"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
